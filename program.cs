@@ -12,29 +12,28 @@ namespace Sphinx
       Riddle secondRiddle = new Riddle("I shave every day, but my beard stays the same. What am I?", "barber", "Barber");
       Riddle thirdRiddle = new Riddle("The more of this there is, the less you see. What is it?", "darkness", "Darkness");
       Riddle fourthRiddle = new Riddle("What has many keys but can't open a single lock?", "piano", "Piano");
+      List<Riddle> RiddleList = new List<Riddle>() { firstRiddle, secondRiddle, thirdRiddle, fourthRiddle };
 
-      Console.WriteLine(firstRiddle.NewRiddle);
-      string userAnswer = Console.ReadLine();
-      if (firstRiddle.correct(userAnswer))
+      bool temp = true;
+      int asdf = RiddleList.Count;
+      for (int i = 0; i < asdf; i++)
       {
-        Console.WriteLine(secondRiddle.NewRiddle);
-        string userAnswer2 = Console.ReadLine();
-        if (secondRiddle.correct(userAnswer2))
+        Random rnd = new Random();
+        int index = rnd.Next(RiddleList.Count - 1);
+        Console.WriteLine(RiddleList[index].NewRiddle);
+        string userAnswer = Console.ReadLine();
+        if (!RiddleList[index].Correct(userAnswer))
         {
-          Console.WriteLine(thirdRiddle.NewRiddle);
-          string userAnswer3 = Console.ReadLine();
-          if (thirdRiddle.correct(userAnswer3))
-          {
-            Console.WriteLine(fourthRiddle.NewRiddle);
-            string userAnswer4 = Console.ReadLine();
-            if (fourthRiddle.correct(userAnswer4))
-            {
-              Console.WriteLine("You beat me!");
-            }
-          }
+          Console.WriteLine("Time for a snack!");
+          temp = false;
+          break;
         }
+        RiddleList.Remove(RiddleList[index]);
       }
-      Console.Write("Time for a snack!");
+      if (temp)
+      {
+        Console.WriteLine("You beat me!");
+      }
     }
   }
 }

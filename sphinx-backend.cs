@@ -15,7 +15,7 @@ namespace Sphinx.Backend
       AnswerLowerCase = answerLowerCase;
       AnswerUpperCase = answerUpperCase;
     }
-    public bool correct(string UserAnswer)
+    public bool Correct(string UserAnswer)
     {
       return (UserAnswer.Contains(AnswerLowerCase) || UserAnswer.Contains(AnswerUpperCase));
     }
