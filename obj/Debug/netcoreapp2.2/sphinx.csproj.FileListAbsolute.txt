@@ -1,0 +1,11 @@
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/bin/Debug/netcoreapp2.2/sphinx.deps.json
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/bin/Debug/netcoreapp2.2/sphinx.runtimeconfig.json
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/bin/Debug/netcoreapp2.2/sphinx.runtimeconfig.dev.json
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/bin/Debug/netcoreapp2.2/sphinx.dll
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/bin/Debug/netcoreapp2.2/sphinx.pdb
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.csprojAssemblyReference.cache
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.csproj.CoreCompileInputs.cache
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.AssemblyInfoInputs.cache
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.AssemblyInfo.cs
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.dll
+/Users/nataliemurphy/Desktop/Epicodus/cSharp/Sphinx/obj/Debug/netcoreapp2.2/sphinx.pdb
