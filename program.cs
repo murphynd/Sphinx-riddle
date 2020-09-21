@@ -9,22 +9,33 @@ namespace Sphinx
     public static void Main()
     {
       Riddle firstRiddle = new Riddle("What has to be broken before you can use it?", "egg", "Egg");
-      Riddle secondRiddle = new Riddle("", "", "");
-      Riddle thirdRiddle = new Riddle("", "", "");
-      Riddle fourthRiddle = new Riddle("", "", "");
+      Riddle secondRiddle = new Riddle("I shave every day, but my beard stays the same. What am I?", "barber", "Barber");
+      Riddle thirdRiddle = new Riddle("The more of this there is, the less you see. What is it?", "darkness", "Darkness");
+      Riddle fourthRiddle = new Riddle("What has many keys but can't open a single lock?", "piano", "Piano");
 
-      Console.WriteLine("Riddle: What has to be broken before you can use it?");
+      Console.WriteLine(firstRiddle.NewRiddle);
       string userAnswer = Console.ReadLine();
-      bool correct = userAnswer.Contains("egg");
-      bool correct1 = userAnswer.Contains("Egg");
-      if (correct || correct1)
+      if (firstRiddle.correct(userAnswer))
       {
-        Console.WriteLine("you are correct");
+        Console.WriteLine(secondRiddle.NewRiddle);
+        string userAnswer2 = Console.ReadLine();
+        if (secondRiddle.correct(userAnswer2))
+        {
+          Console.WriteLine(thirdRiddle.NewRiddle);
+          string userAnswer3 = Console.ReadLine();
+          if (thirdRiddle.correct(userAnswer3))
+          {
+            Console.WriteLine(fourthRiddle.NewRiddle);
+            string userAnswer4 = Console.ReadLine();
+            if (fourthRiddle.correct(userAnswer4))
+            {
+              Console.WriteLine("You beat me!");
+            }
+          }
+        }
       }
-      else
-      {
-        Console.Write("time for a snack!");
-      }
+      Console.Write("Time for a snack!");
     }
   }
 }
+
